@@ -1,6 +1,7 @@
 package org.sjn.CRUD.GET;
 
 import io.restassured.RestAssured;
+import org.testng.annotations.Test;
 
 public class BDDStyleGET {
     public static void main(String[] args) {
@@ -44,21 +45,22 @@ public class BDDStyleGET {
         //  Time, Headers ,Cookies
 
         test1();
-       // test2();
+        test2();
 
 
     }
-
-//    private static void test2() {
-//        RestAssured
-//                .given()
-//                .baseUri("https://api.zippopotam.us")
-//                .basePath("/IN/-1")
-//                .when()
-//                .log().all().get().
-//                then()
-//                .log().all().statusCode(404);
-//    }
+@Test
+    private static void test2() {
+        RestAssured
+                .given()
+                .baseUri("https://api.zippopotam.us")
+                .basePath("/IN/-1")
+                .when()
+                .log().all().get().
+                then()
+                .log().all().statusCode(404);
+    }
+    @Test(priority = 1)
 
     private static void test1() {
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/jaiswals/JavaPractice/LearningRestAssured09">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="org.sjn.TestNgEx2109.TestNG008"></class>
+
+        </classes>
+
+    </test>
+</suite>
